@@ -1,0 +1,201 @@
+:root {
+  --md-primary-fg-color: #3a2721;
+  --md-primary-fg-color--light: #5a3d31;
+  --md-primary-fg-color--dark: #251814;
+  --md-accent-fg-color: #caa15a;
+  --taiwu-font: "Microsoft YaHei", "微软雅黑", "Noto Sans CJK SC", "PingFang SC", sans-serif;
+  --taiwu-bg: #120e0c;
+}
+
+[data-md-color-scheme="slate"] {
+  --md-default-bg-color: #17120f;
+  --md-default-bg-color--light: #211915;
+  --md-default-bg-color--lighter: #2b211b;
+  --md-default-fg-color: #eadfca;
+  --md-default-fg-color--light: #d8c9ad;
+  --md-default-fg-color--lighter: #b8a98f;
+  --md-typeset-color: #eadfca;
+  --md-typeset-a-color: #d9b66f;
+  --md-code-bg-color: #261d18;
+  --md-code-fg-color: #f0dec1;
+  --md-admonition-bg-color: #211915;
+  --md-footer-bg-color: #100c0a;
+  --md-footer-bg-color--dark: #0b0807;
+}
+
+html,
+body,
+.md-container {
+  background-color: var(--taiwu-bg);
+}
+
+body {
+  background:
+    radial-gradient(circle at 20% 0%, rgba(161, 116, 59, 0.14), transparent 32rem),
+    linear-gradient(180deg, #19120f 0%, #120e0c 100%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: var(--taiwu-font);
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: var(--taiwu-font);
+}
+
+.md-header,
+.md-tabs {
+  background: linear-gradient(180deg, #2f201b 0%, #211612 100%);
+  color: #f0dec1;
+}
+
+.md-main {
+  background:
+    linear-gradient(90deg, rgba(202, 161, 90, 0.05), transparent 22%, transparent 78%, rgba(202, 161, 90, 0.04)),
+    transparent;
+}
+
+.md-content__inner {
+  padding-top: 1.4rem;
+}
+
+.md-typeset {
+  font-family: var(--taiwu-font);
+  font-size: 0.76rem;
+  line-height: 1.65;
+}
+
+.md-header,
+.md-tabs,
+.md-nav,
+.md-search,
+.md-typeset table,
+.md-typeset .admonition,
+.md-typeset details,
+.md-typeset code,
+.md-typeset pre,
+.md-typeset kbd {
+  font-family: var(--taiwu-font);
+}
+
+.md-typeset h1,
+.md-typeset h2,
+.md-typeset h3 {
+  font-family: var(--taiwu-font);
+  color: #f3dfb4;
+  font-weight: 700;
+}
+
+.md-typeset h1 {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.md-typeset h2 {
+  border-bottom: 1px solid rgba(202, 161, 90, 0.38);
+  padding-bottom: 0.35rem;
+}
+
+.md-typeset h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+}
+
+.md-typeset h3::before,
+.md-typeset h3::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 0.32em solid transparent;
+  border-bottom: 0.32em solid transparent;
+}
+
+.md-typeset h3::before {
+  border-right: 0.7em solid rgba(150, 132, 116, 0.55);
+}
+
+.md-typeset h3::after {
+  border-left: 0.7em solid rgba(150, 132, 116, 0.55);
+}
+
+.md-typeset strong {
+  color: #ff8a32;
+}
+
+.md-typeset blockquote {
+  border-left-color: #b88746;
+  color: #d8c9ad;
+}
+
+.md-typeset table:not([class]) {
+  background-color: rgba(33, 25, 21, 0.86);
+  border: 1px solid rgba(202, 161, 90, 0.28);
+}
+
+.md-typeset table:not([class]) th {
+  background-color: rgba(88, 58, 42, 0.72);
+  color: #f5dfb7;
+}
+
+.md-typeset code {
+  color: #ffe2a3;
+  background-color: rgba(38, 29, 24, 0.92);
+  border: 1px solid rgba(202, 161, 90, 0.18);
+  border-radius: 3px;
+}
+
+.md-typeset pre,
+.md-typeset .highlight {
+  background-color: rgba(25, 18, 15, 0.96);
+}
+
+.md-typeset pre code {
+  color: #ffe2a3;
+}
+
+.md-typeset .admonition,
+.md-typeset details {
+  border-color: rgba(202, 161, 90, 0.5);
+  box-shadow: 0 0.2rem 0.7rem rgba(0, 0, 0, 0.16);
+  font-size: 0.68rem;
+  line-height: 1.48;
+}
+
+.md-typeset .admonition-title,
+.md-typeset summary {
+  background-color: rgba(92, 59, 39, 0.42);
+}
+
+.md-typeset .admonition.formula {
+  font-size: 0.88rem;
+  line-height: 1.85;
+  text-align: center;
+}
+
+.md-typeset .admonition.formula .admonition-title {
+  text-align: left;
+}
+
+.md-typeset .admonition.example {
+  font-style: italic;
+}
+
+.md-nav__title,
+.md-nav__item .md-nav__link--active {
+  color: #f0c978;
+}
+
+.md-typeset .twemoji {
+  display: inline-flex;
+  align-items: center;
+  vertical-align: -0.12em;
+}
+
+.md-typeset .twemoji svg {
+  width: 1.08em;
+  height: 1.08em;
+}

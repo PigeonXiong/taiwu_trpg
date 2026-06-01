@@ -1,0 +1,55 @@
+site_name: 太吾同人 TRPG 规则
+site_description: 基于《太吾绘卷》的同人桌面角色扮演规则
+site_url: ""
+
+theme:
+  name: material
+  language: zh
+  palette:
+    scheme: slate
+    primary: brown
+    accent: amber
+  font: false
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.top
+    - navigation.indexes
+    - toc.follow
+    - content.code.copy
+extra_css:
+  - stylesheets/parchment.css
+
+extra_javascript:
+  - javascripts/extra.js
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+
+nav:
+  - 首页: index.md
+  - 同人介绍: chap00_intro.md
+  - 基本规则:
+      - 太吾世界: chap01_world.md
+      - 角色创建: chap01_creation.md
+      - 角色提升: chap01_leveling.md
+      - 附：角色出身表: chap01_origin.md
+      - 附：角色特质表: chap01_feat.md
+  - 修文习武:
+      - 技艺技能: chap02_tech_skills.md
+      - 武艺技能: chap02_combat_skills.md
+  - 江湖门派: chap04_jianghu.md
+  - 装备道具: chap05_equipment.md
+  - 范例模组: chap06_modules.md
