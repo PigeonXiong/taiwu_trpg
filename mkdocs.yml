@@ -39,7 +39,6 @@ markdown_extensions:
       emoji_generator: !!python/name:material.extensions.emoji.to_svg
 
 nav:
-  - 首页: index.md
   - 同人介绍: chap00_intro.md
   - 基本规则:
       - 太吾世界: chap01_world.md
