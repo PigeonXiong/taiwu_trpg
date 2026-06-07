@@ -1,0 +1,1272 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="基于《太吾绘卷》的同人桌面角色扮演规则">
+      
+      
+      
+      
+        <link rel="prev" href="../chap01_world/">
+      
+      
+        <link rel="next" href="../chap01_leveling/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>角色创建 - 太吾同人 TRPG 规则</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/parchment.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="太吾同人 TRPG 规则" class="md-header__button md-logo" aria-label="太吾同人 TRPG 规则" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            太吾同人 TRPG 规则
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              角色创建
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chap00_intro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  同人介绍
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../chap01_world/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  基本规则
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chap02_tech_skills/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  修文习武
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chap04_jianghu/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  江湖门派
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chap05_equipment/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  装备道具
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chap06_modules/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  范例模组
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="太吾同人 TRPG 规则" class="md-nav__button md-logo" aria-label="太吾同人 TRPG 规则" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    太吾同人 TRPG 规则
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap00_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    同人介绍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基本规则
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基本规则
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap01_world/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    太吾世界
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    角色创建
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    角色创建
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：初入江湖
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：选择特质
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：提升属性和技能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第三步：提升属性和技能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提升属性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提升技能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：修习门派功法
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五步：购买物品
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第六步：完成人物卡
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap01_leveling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    角色提升
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap01_origin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附：角色出身表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap01_feat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附：角色特质表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    修文习武
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    修文习武
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap02_tech_skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技艺技能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap02_combat_skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    武艺技能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap04_jianghu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    江湖门派
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap05_equipment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    装备道具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap06_modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    范例模组
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第一步：初入江湖
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第二步：选择特质
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第三步：提升属性和技能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="第三步：提升属性和技能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提升属性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        提升技能
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第四步：修习门派功法
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第五步：购买物品
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        第六步：完成人物卡
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">角色创建</h1>
+<p>创建角色时，请严格按照下述步骤依次进行。本章默认创造 <strong>【精纯等级】</strong> 为1的初级角色，更高级的角色创建详见 <a href="../chap01_leveling/">角色提升</a>。</p>
+<p>下述步骤不能打乱，因为靠前的步骤可能会影响后续步骤，如部分特质会影响角色的魅力、出身会影响角色六维等等。</p>
+<table>
+<thead>
+<tr>
+<th>步骤</th>
+<th>内容</th>
+<th>主要事项</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>第一步</td>
+<td>构建角色形象</td>
+<td>确定角色的【出身】和【处事立场】</td>
+</tr>
+<tr>
+<td>第二步</td>
+<td>选择特质</td>
+<td>获得并花费【造化】，选择正面或负面【特质】</td>
+</tr>
+<tr>
+<td>第三步</td>
+<td>提升属性与技能</td>
+<td>提升【六维】基本属性、【魅力】和各项【技能】</td>
+</tr>
+<tr>
+<td>第四步</td>
+<td>修习门派功法</td>
+<td>分配门派支持度，习得对应功法</td>
+</tr>
+<tr>
+<td>第五步</td>
+<td>购买初始物品</td>
+<td>购买初始武器、护具与各类消耗品</td>
+</tr>
+<tr>
+<td>第六步</td>
+<td>完成人物卡</td>
+<td>使用剩余【造化】、【运起】功法、编写背景</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">第一步：初入江湖</h2>
+<ul>
+<li>选择一项 <strong>【处事立场】</strong> ：刚正、仁善、中庸、叛逆、唯我。</li>
+</ul>
+<p>一般而言，处事立场主要用于扮演，仅有少数功法的效果会受到处事立场影响。若角色长期做出违背处事立场的行为，GM有权让其处事立场发生偏移，并为其累加 <strong>【入魔值】</strong> 。详见“立场与入魔”章节。</p>
+<ul>
+<li>再依据<a href="../chap01_origin/">角色出身表</a>，选择一项 <strong>【出身】</strong> 。这由太吾绘卷中的志向转换而来，会调整角色的初始六维属性、初始技能，并提供一项特殊能力。</li>
+</ul>
+<h2 id="_3">第二步：选择特质</h2>
+<p>你获得 <code>10</code> 点 <strong>【造化】</strong> ，用于选择 <strong>【特质】</strong> 。正面特质会消耗造化，负面特质会返还造化。</p>
+<p>在这一步中，你选择的正面特质合计不能超过 <code>10</code> 点造化，选择的负面特质合计也不能超过 <code>10</code> 点造化。特质列表详见“人物特质”章节。</p>
+<p>剩余造化仅可在第六步中继续使用。</p>
+<div class="admonition example">
+<p>例如，你选择了合计10点的负面特质，且没有选择任何正面特质，那么你将有20点造化可在之后使用。</p>
+<p>若你选择了合计8点的正面特质、2点负面特质，那么你将剩余4点造化可在之后使用。</p>
+</div>
+<h2 id="_4">第三步：提升属性和技能</h2>
+<h3 id="_5">提升属性</h3>
+<p>角色拥有六维 <strong>【基本属性】</strong> ，以及一项额外属性 <strong>【魅力】</strong> 。</p>
+<table>
+<thead>
+<tr>
+<th>属性</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>膂力</td>
+<td>力量、肌肉强度、爆发力。影响力道、卸力、人物负重等。</td>
+</tr>
+<tr>
+<td>灵敏</td>
+<td>灵活度、反应速度、协调力。影响迅疾、闪避、移动速度等。</td>
+</tr>
+<tr>
+<td>体魄</td>
+<td>强健度、抵抗力、忍耐力。影响破体、破气、服食效果等。</td>
+</tr>
+<tr>
+<td>定力</td>
+<td>心地清净、意志力、判断力、抓住良机的能力。影响动心、守心、战斗先机等。</td>
+</tr>
+<tr>
+<td>根骨</td>
+<td>先天素质、骨血品质。影响御体、御气、辅运内功数量等。</td>
+</tr>
+<tr>
+<td>悟性</td>
+<td>智力、理解力、创造力、记忆力。影响精妙、拆招、许多技艺技能等。</td>
+</tr>
+<tr>
+<td>魅力</td>
+<td>外表、口才、影响他人的能力。影响许多技艺技能、部分功法效果等。</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>首先，投掷 <code>1D6</code> ，骰子出目即为你的初始魅力。</li>
+<li>随后，你有 <code>15</code> 点属性点，可以分配到六维基本属性上；若你愿意，也可以用属性点提高魅力。</li>
+<li>在这一步结束时，未使用的属性点将被浪费。</li>
+</ul>
+<p>6项基本属性的初始等级均为 <code>1</code> ，创建角色时最高只能提高到 <code>5</code> ，记作 <code>1/5</code>。这一上限被称作 <strong>【天生上限】</strong> ，<strong>出身</strong>和<strong>特质</strong>会提高或降低初始值和<strong>天生上限</strong>。</p>
+<p>在冒险过程中随着角色<strong>精纯</strong>的提高，属性的基础值会得到增长，但仍无法超过<strong>天生上限</strong>；内功心法、外功招式、物品等提供的额外属性加值，可以无视这一上限。但最终，无论通过何种方式，人物的属性都不能超过 <code>9</code> 。</p>
+<p>与六维基本属性不同，魅力的天生上限总是 <code>9</code> ，但创建角色完成后不能随精纯升级提高；部分功法和物品可以提高魅力。同样，基础值与额外加成相加后的最终魅力也不能超过 <code>9</code> 。</p>
+<div class="admonition note">
+<p class="admonition-title">创建顺序</p>
+<p>由于部分特质会影响魅力，所以你需要先选择特质，再投掷魅力。此外，你也必须在投掷完魅力后，再开始分配属性点。</p>
+</div>
+<h3 id="_6">提升技能</h3>
+<p><strong>【技能】</strong> 分为 <strong>【武艺】</strong> 和 <strong>【技艺】</strong> 。详见<a href="../chap02_tech_skills/">武艺技能</a>、<a href="../chap02_tech_skills/">技艺技能</a>。</p>
+<ul>
+<li>你有 <code>20</code> 点技能点，可以分配到所有武艺和技艺上。</li>
+<li>在这一步结束时，未使用的技能点将被浪费。</li>
+</ul>
+<p>所有武艺和技艺的初始等级均为 <code>0</code> ，代表无品级、未受训；创建角色时最高只能提高到 <code>5</code> ，记作 <code>0/5</code>。<strong>出身</strong>和<strong>特质</strong>会提高或降低初始值和创建时的上限。</p>
+<p>与属性不同，技能没有<strong>天生上限</strong>。虽然创建角色时无法提高至<code>5</code>级以上，但你总能在冒险中随着精纯的提高，将它们学习至最高的<code>9</code>级。</p>
+<p>此外，内功心法、外功招式、物品也可能提供额外的技能加值。与属性不同，基础值与额外加成相加后的最终技能等级可以达到 <code>10</code> 或更高。</p>
+<h2 id="_7">第四步：修习门派功法</h2>
+<ul>
+<li>你获得 <code>4</code> 点 <strong>【门派支持】</strong> ，将它分配至所有十五门派上。</li>
+</ul>
+<p><strong>门派支持</strong>需按整数分配给所有十五门派，角色在单个门派拥有的支持度为<code>0~9</code>。当角色拥有<code>N</code>点支持度时，他可以习得该门派所有等级<code>N</code>或更低的 <strong>「内功」、「身法」、「绝技」、「催破」</strong> 功法。</p>
+<div class="admonition note">
+<p class="admonition-title">修习与运功</p>
+<p>习得的功法在<strong>运起</strong>之前并不生效。即使角色拥有足够的支持度并习得了大量功法，他仍然受到精纯等级的限制，只能<strong>运起</strong>一定数量、一定品级的功法。详见 <a href="../chap01_leveling/">角色提升</a>和战斗章节。</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">门派身份</p>
+<p>高门派支持并不意味着角色一定是这些门派的弟子。这可能代表父母的言传身教、高人指点，或偶然寻得门派秘籍。你也无需满足该门派对于弟子的特殊要求，例如少林寺不收女性弟子、璇女派不收男性弟子等。若需要扮演门派弟子，应当选择 <strong>「门派修行」</strong> 特质。</p>
+</div>
+<h2 id="_8">第五步：购买物品</h2>
+<p>在当前版本中，创建角色时使用简化购物。你可以直接选择下列物品：</p>
+<ol>
+<li>2把任意种类武器。</li>
+<li>1件任意身体护具。</li>
+<li>2件任意2级以下的消耗品。</li>
+</ol>
+<h2 id="_9">第六步：完成人物卡</h2>
+<ol>
+<li>使用剩余的<strong>造化</strong>进一步提升人物，你可以：<ul>
+<li>以3点<strong>造化</strong>提升1级六维属性或魅力（不超过<strong>天生上限</strong>）</li>
+<li>以2点<strong>造化</strong>提升1级武艺技能（不超过创建上限）</li>
+<li>以1点<strong>造化</strong>提升1级技艺技能（不超过创建上限）</li>
+</ul>
+</li>
+<li>根据战斗章节，选择<strong>运起</strong>的功法</li>
+<li>为角色取名、编写背景故事、完善人物</li>
+</ol>
+<p>在这一步结束后，未消耗的造化也会被浪费。</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,1421 @@
+
+<!doctype html>
+<html lang="zh" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="基于《太吾绘卷》的同人桌面角色扮演规则">
+      
+      
+      
+      
+        <link rel="prev" href="../chap01_feat/">
+      
+      
+        <link rel="next" href="../chap02_combat_skills/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+    
+    
+      
+        <title>技艺技能 - 太吾同人 TRPG 规则</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../stylesheets/parchment.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="slate" data-md-color-primary="brown" data-md-color-accent="amber">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          跳转至
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="页眉">
+    <a href=".." title="太吾同人 TRPG 规则" class="md-header__button md-logo" aria-label="太吾同人 TRPG 规则" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            太吾同人 TRPG 规则
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              技艺技能
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+    
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="搜索" placeholder="搜索" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="查找">
+        
+        <button type="reset" class="md-search__icon md-icon" title="清空当前内容" aria-label="清空当前内容" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            正在初始化搜索引擎
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="标签" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chap00_intro/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  同人介绍
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../chap01_world/" class="md-tabs__link">
+          
+  
+  
+    
+  
+  基本规则
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="./" class="md-tabs__link">
+          
+  
+  
+    
+  
+  修文习武
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chap04_jianghu/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  江湖门派
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chap05_equipment/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  装备道具
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../chap06_modules/" class="md-tabs__link">
+        
+  
+  
+    
+  
+  范例模组
+
+      </a>
+    </li>
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="导航栏" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="太吾同人 TRPG 规则" class="md-nav__button md-logo" aria-label="太吾同人 TRPG 规则" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    太吾同人 TRPG 规则
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap00_intro/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    同人介绍
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    基本规则
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    基本规则
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap01_world/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    太吾世界
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap01_creation/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    角色创建
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap01_leveling/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    角色提升
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap01_origin/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附：角色出身表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap01_feat/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    附：角色特质表
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    修文习武
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    修文习武
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技艺技能
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    技艺技能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        技艺列表
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        技艺详述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="技艺详述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        医术 未受训可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        毒术 未受训不可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        勇壮 未受训可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        搜查 未受训可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        厨艺
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        杂学
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        交涉
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        武学
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文化类技艺
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap02_combat_skills/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    武艺技能
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap04_jianghu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    江湖门派
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap05_equipment/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    装备道具
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../chap06_modules/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    范例模组
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="目录">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      目录
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        技艺列表
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        技艺详述
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="技艺详述">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        医术 未受训可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        毒术 未受训不可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        勇壮 未受训可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        搜查 未受训可用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        厨艺
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        杂学
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        交涉
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        武学
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        文化类技艺
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">技艺技能</h1>
+<p>三百六十行，行行出状元。除去武学上的造诣，角色在生活冒险中的方方面面所需要用到的技能，都被称呼为技艺，这囊括了原作中的十六种技艺，以及一部分七元赋性和一些在桌面规则中常用的技能。</p>
+<p>技艺技能根据使用场景，会关联一项或多项属性（六维属性和魅力属性），进行检定时，默认使用：</p>
+<div class="admonition formula">
+<p><code>[关联属性等级 + 技艺等级 + 其他调整] vs. [阈值]</code></p>
+<p>技艺根据使用场景会关联不同的属性。关联多项属性时，检定者可自行选择较高的属性。</p>
+</div>
+<p>特别的，当技艺等级为<code>0</code>时，视为 <strong>【未受训】</strong> ，部分未受训的技艺也可尝试检定，但会受到<code>-2</code>减值，使用：</p>
+<div class="admonition formula">
+<p><code>[关联属性等级 - 2 + 其他调整] vs. [阈值]</code></p>
+</div>
+<h2 id="_2">技艺列表</h2>
+<p>技艺分为：</p>
+<p>制造技艺： 巧匠、织锦、锻造、制木、厨艺</p>
+<p>医学技艺： 医术、毒术</p>
+<p>冒险技艺： 勇壮、搜查、杂学、交涉、术数</p>
+<p>文化技艺： 品鉴、音律、书画、道法、佛学、弈棋</p>
+<h2 id="_3">技艺详述</h2>
+<p>与武艺不同，某些技艺即使是未受训练的门外汉也能尝试几手，而另一些技艺则完全无法由未经训练者使用。每项技艺会标注其是否 <strong>【未受训可用】</strong> ：未受训可用的技艺在等级为0时仍可尝试检定；未受训不可用的技艺，至少需要学过1级才能使用。</p>
+<h3 id="_4">医术 未受训可用</h3>
+<ul>
+<li>战外治疗：角色能用医术治疗自己和他人。每次短休或长休时，角色都能尝试一次医术常规检定：</li>
+</ul>
+<div class="admonition formula">
+<p><code>[悟性 + 医术等级 + 其他调整] vs 0</code></p>
+</div>
+<p>若角色获得 <code>N</code> 个成功，本次休息中，他和所有队友的每个回复骰效果变为 <code>N</code> 倍：短休从 <code>1D6</code> 提升为 <code>ND6</code>，长休从 <code>2D6</code> 提升为 <code>2ND6</code>。若角色已经耗尽当日的回复骰，则医术无法生效。</p>
+<p>当多个角色同时尝试医术时，他们应当进行协助。由骰池较低者先进行检定，再将成功数加至骰池较高者的骰池中，进行最终检定。</p>
+<ul>
+<li>战中治疗：角色能在战斗中进行上述检定，消耗 <strong>【复合动作·15先机】</strong> ，目标为自己或相邻的友军。每个成功只能恢复1点内伤或外伤。</li>
+</ul>
+<p>角色在战斗中疗伤的次数有限，为 <code>[医术等级/3]</code>，向上取整。也就是说，医术等级为0的角色无法在战斗中尝试治疗。部分功法能增加战中治疗的效果和次数，或加快施展动作。</p>
+<ul>
+<li>
+<p>调查伤患：角色</p>
+</li>
+<li>
+<p>望闻问切：除去武功较量时承受的伤势，江湖人士也会受到各类疑难杂症的影响。顽疾、旧伤、肢体残毁等问题无法通短休、长休以及普通的治疗解决。要治疗这类伤病，需要患者与医生共同配合，在休整期中进行治疗。医生每次过月都能进行一次医术常规检定，累计获得的成功，当成功数超过伤病对应的阈值时，治疗的第一阶段完成（如疾病不再恶化，旧伤不再发作等），并清空所累积的成功数。在这之后，医生可继续进行检定，当成功数再次累积至对应阈值时，治疗彻底完成（如疾病被治愈，旧伤被彻底祛除）。</p>
+</li>
+</ul>
+<h3 id="_5">毒术 未受训不可用</h3>
+<p>战外驱毒：角色能用毒术来弱化或驱除自己和他人体内的毒素（蛊虫、顽毒无法以此祛除）。每次短休或长休时，角色都能尝试一次毒术常规检定：</p>
+<div class="admonition formula">
+<p><code>[悟性 + 毒术等级 + 其他调整] vs. [中毒]</code></p>
+</div>
+<p>当角色身重多种毒素时，应取其中等级最高者作为阈值，再额外加上总毒素种类-1。例如，为一名身中3级烈毒，2级郁毒，1级寒毒的角色祛毒，需要3+2=5阈值</p>
+<p>当成功数恰好等于阈值时，你就能选择目标体内一种毒素减益，使其降低1级。在这之后，每个额外成功，就能再选择目标体内的一种毒素降低1级。</p>
+<p>每次该检定都会消耗1个患者的恢复骰。只要患者的恢复骰足够，就能连续多次祛毒。只要患者没有摄入新的毒物，每次成功的战外驱毒都能让你下次对该患者进行战外驱毒时的阈值-1，最低降至原阈值的一半，向上取整。</p>
+<p>每天，单个治疗者对单个患者只能尝试一次战外驱毒。当多个治疗者想同时驱毒时，他们可以选择协助以攻克高级毒物，也可以各自尝试以快速驱除毒素。</p>
+<p>战中抑毒：当你或威胁范围内的队友通过某种方式摄入毒物，并且被你察觉到时，你能消耗 <strong>【反应动作·10先机】</strong> 进行如下常规检定：</p>
+<div class="admonition formula">
+<p><code>[灵敏 + 毒术等级 + 其他调整] vs. [毒物等级]</code></p>
+</div>
+<p>当成功数恰好等于毒药等级时，你能辨认出目标毒物的名称和效果，并将毒物的 <strong>【生效时间】</strong> 推迟1档。此外，每获得1个净成功，你能选择下列一项：</p>
+<ol>
+<li>让毒物生效时间进一步推迟1档。</li>
+<li>选择该毒物具备的一种毒素，降低1点。</li>
+</ol>
+<p>下毒：使用毒物之前，下毒者要先进行准备。无论是事先将毒物涂抹于武器上、制成药霜在战斗中使用，还是将毒物藏入目标的餐饮中，都需要进行如下常规检定：</p>
+<div class="admonition formula">
+<p><code>[定力 + 毒术等级 + 其他调整] vs. [毒物等级]</code></p>
+</div>
+<p>当成功数大于等于毒物等级时，你便成功施展目标毒物。涂抹于武器上或制作成药霜时，仍需要击中敌人才会让毒物生效；藏入餐饮后，仍需等待目标服下。此外，你每获得1个成功，还能选择提升毒物的部分效果。</p>
+<p>角色也能尝试在同一把武器上淬上多种毒物，或在同一份餐食里添加多种毒物，甚至添加同一种毒物的多份剂量。这样做时，上述检定对抗的阈值提升为所有毒物的等级之和。合并毒物时，角色需要选取其中一种作为核心，最终毒物的隐匿度、发作时间、摄入方式、特殊效果将与核心毒物相同，其余毒物会将其蕴含的毒素添加至核心毒物中。</p>
+<h3 id="_6">勇壮 未受训可用</h3>
+<p>户外行动：当角色在冒险中遭遇需要游泳、攀爬、谨慎走过独木桥等场景时，GM应根据环境的险峻程度设置阈值，并要求角色执行如下常规检定：</p>
+<div class="admonition formula">
+<p><code>[灵敏 + 勇壮等级 + 其他调整] vs. [环境阈值]</code></p>
+</div>
+<p>为避免角色们在冒险过程中意外分离，他们能够作为团队合作渡过难关。这样做时，只需大于等于团队人数一半的人完成任务，整个团队就能安全通过；若完成任务的人数不足，整个团队都将失败。</p>
+<p>搬运重物：角色能临时搬起超过重载上限的物品，包括将重物举过头顶、短途搬运等行动。要开始搬运，角色需要空出两只手；若只空出一只手也能搬运，但检定需双骰取低。</p>
+<div class="admonition formula">
+<p><code>[膂力 + 勇壮等级 + 其他调整]</code></p>
+</div>
+<p>每点成功临时提高30斤负重。该检定也能用于角色间比拼膂力，各自进行搬运检定，再比较总负重上限，较高者获胜。</p>
+<p>若要在战斗中搬运超过自己重载上限的物品，角色需要以 <strong>【复杂动作·10先机】</strong> 举起物品。举起物品后，角色无法进行常规行动和移动，只能以 <strong>【复合动作·15先机】</strong> 缓慢移动。搬运中的角色也能正常使用反应，但三项防御值都-2。</p>
+<p>抵抗疲劳：每当角色没能完成长休地度过一整天，就要进行如下检定，阈值为累积的未长休天数。失败则会进入疲劳状态；若在疲劳状态下再次失败，则会力竭。</p>
+<div class="admonition formula">
+<p><code>[体魄 + 勇壮等级 + 其他调整] vs. [未长休天数]</code></p>
+</div>
+<p>闭气：角色能用勇壮来尝试闭气。无论是溺水、被捂住口鼻等被动情形，还是潜水、屏息抵御毒气等主动情形，角色都能无需动作地执行闭气检定。当角色能正常换气</p>
+<div class="admonition formula">
+<p><code>[体魄 + 勇壮等级 + 其他调整]</code></p>
+</div>
+<p>角色能不受影响地闭气一分钟，战斗内约10轮。闭气检定中每个成功能延长15秒，战斗内约3轮。在这之后，每过5秒，战斗内约1轮，角色就要受到 <code>2D6</code> 点无法抵抗的内伤，直到正常呼吸为止。</p>
+<h3 id="_7">搜查 未受训可用</h3>
+<p>寻找事物：角色能在冒险中寻找被藏起来的物品、密门等事物。GM应当根据事物的隐藏度决定阈值，搜查者进行如下常规检定：</p>
+<div class="admonition formula">
+<p><code>[悟性 + 搜查等级 + 其他调整] vs. [设定的阈值]</code></p>
+</div>
+<p>若PC在游戏中提出合理且可行的搜索方向，应当适当降低阈值。</p>
+<p>追踪痕迹：角色能用搜查寻找他人留下的痕迹，这包括脚印、血迹、打斗遗留等物理痕迹，也包括目击证言、坊间流传的行踪等残留信息。搜查者进行如下常规检定：</p>
+<div class="admonition formula">
+<p><code>[悟性 + 搜查等级 + 其他调整] vs. [设定的阈值]</code></p>
+</div>
+<p>GM可以参考下表决定痕迹的阈值：</p>
+<table>
+<thead>
+<tr>
+<th>踪迹出现的时间</th>
+<th>追踪阈值</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>同一天数小时内</td>
+<td>1</td>
+</tr>
+<tr>
+<td>数日以内</td>
+<td>2</td>
+</tr>
+<tr>
+<td>一月至两月以内</td>
+<td>3</td>
+</tr>
+<tr>
+<td>半年左右</td>
+<td>4</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>调整项</th>
+<th>阈值调整</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>目标人数较多</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>有大量目标外的人员经过</td>
+<td>+1</td>
+</tr>
+<tr>
+<td>目标有明显特征，如独特体型、衣着等</td>
+<td>-1</td>
+</tr>
+<tr>
+<td>目标的身法等级较高</td>
+<td>+0~+2</td>
+</tr>
+</tbody>
+</table>
+<h3 id="_8">厨艺</h3>
+<p><strong>未受训可用。</strong></p>
+<p>暂缺。</p>
+<h3 id="_9">杂学</h3>
+<p><strong>未受训可用。</strong></p>
+<p>打探流言：角色能在特定区域打探潜藏的信息，这包括与居民交涉、搜索相关地点等所有尝试。根据消息的隐秘度，其需要的成功数不同。GM可以在消息列表中随机选择，也可以根据PC们的倾向来发布消息。</p>
+<div class="admonition formula">
+<p><code>[魅力 + 杂学等级 + 其他调整]</code></p>
+</div>
+<p>地方知识：角色能通过杂学获取当地知识，包括当地常用语、非法店家的位置、隐秘帮派所在等。该技能同样用于在伪装潜入一些当地集会时，做出得体且符合身份的言行。GM应当根据任务难度决定阈值，并让角色进行如下常规检定：</p>
+<div class="admonition formula">
+<p><code>[悟性 + 杂学等级 + 其他调整] vs. [设定的阈值]</code></p>
+</div>
+<h3 id="_10">交涉</h3>
+<p><strong>未受训可用。</strong></p>
+<p>改变印象：暂缺。</p>
+<p>说服他人：行走江湖，总不会只有打打杀杀。当角色需要以言语达成目的时，应当使用这项技艺。玩家应当以自己角色的口吻阐述交涉内容，而非直接提出交涉目的；GM也应降低说服阈值，以奖励恰当的扮演。</p>
+<p>一般而言，战斗外的说服代表角色长时间交涉的最终结果，故不可重试；而战斗内的交涉没有限制，但每次使用都需要一个 <strong>【复杂动作·10先机】</strong> 。</p>
+<div class="admonition formula">
+<p><code>[魅力 + 交涉等级 + 其他调整] vs. [设定的阈值]</code></p>
+</div>
+<p>若角色交涉的内容并非事实，则他需要分配一定数量的成功来掩盖谎言。GM需为受骗方暗骰 <strong>【固有检定·洞察】</strong> ，并记录获得的成功。若唬骗方用来掩盖谎言的成功大于等于受骗方洞察的成功，则谎言并未被识破，唬骗方只能用剩余成功去对抗说服阈值；若掩盖谎言的成功小于洞察成功，则谎言被识破，但这并不等价于交涉失败。</p>
+<h3 id="_11">武学</h3>
+<p><strong>未受训可用。</strong></p>
+<p>观察对手：角色总能以武学观察对手的来路与擅长武学，帮助自己在战斗中做出更具针对性的决策。战斗前，角色一般有一次使用该技艺的机会；在战斗中观察对手的次数不限，但每次观察都需要一个 <strong>【复杂动作·10先机】</strong> 。</p>
+<div class="admonition formula">
+<p><code>[悟性 + 武学等级 + 其他调整]</code></p>
+</div>
+<p>角色能消耗对应的成功数，向GM索取各种信息：</p>
+<table>
+<thead>
+<tr>
+<th>观察项目</th>
+<th>所需成功</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三项攻击中最擅长的一项</td>
+<td>1</td>
+</tr>
+<tr>
+<td>三项攻击由高到低的顺序</td>
+<td>2</td>
+</tr>
+<tr>
+<td>三项防御中最薄弱的一项</td>
+<td>1</td>
+</tr>
+<tr>
+<td>三项防御由高到低的顺序</td>
+<td>2</td>
+</tr>
+<tr>
+<td>运起的功法主要出自什么门派</td>
+<td>1</td>
+</tr>
+<tr>
+<td>最擅长的武器类型</td>
+<td>1</td>
+</tr>
+<tr>
+<td>内伤、外伤哪项更低</td>
+<td>1</td>
+</tr>
+<tr>
+<td>有无运起护体绝技</td>
+<td>1</td>
+</tr>
+<tr>
+<td>运起的护体绝技具体列表</td>
+<td>2</td>
+</tr>
+</tbody>
+</table>
+<p>辨识招式：GM可以隐藏敌人所施放的催破招式名称和效果，转而以“一招凌厉的剑法”“一套变幻莫测的掌法”来指代。PC能够以武学辨识敌人的招式，从而得知其真实效果。辨识招式不需要动作，当对方施展时，进行如下常规检定：</p>
+<div class="admonition formula">
+<p><code>[悟性 + 武学等级 + 其他调整] vs. [目标招式等级/2]</code></p>
+</div>
+<p>目标招式等级除以2时向上取整。此项规则是可选规则，GM和玩家也能互相公开所用招式的名称和效果。</p>
+<p>看破与协助：角色能在战斗中使用武学看破敌人的招式，以增加自己的三项防御值，或协助友军战斗。详见“战斗规则”章节。</p>
+<p>取代需求：武学等级能够取代其他武艺技能，满足功法的修习需求，但不能取代属性需求。使用功法、执行检定时，不能使用武学等级代替对应武艺。例如，少林派的「罗汉功」修习需求为内功2、体魄2、定力2，则内功0、武学2、体魄2、定力2的角色也能修习它。</p>
+<p>如果功法有复数武艺需求，则武学只能取代其中一个。</p>
+<h3 id="_12">文化类技艺</h3>
+<p><strong>未受训不可用。</strong></p>
+<p>品鉴、音律、书画、道法、佛学、弈棋、术数等文化类技艺，主要用于满足功法要求和角色之间比拼文化。比拼时，使用如下检定，成功数较高者获胜：</p>
+<div class="admonition formula">
+<p><code>[悟性 + 文化类技艺等级 + 其他调整]</code></p>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  回到页面顶部
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.top", "navigation.indexes", "toc.follow", "content.code.copy"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "\u5df2\u590d\u5236", "clipboard.copy": "\u590d\u5236", "search.result.more.one": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.more.other": "\u5728\u8be5\u9875\u4e0a\u8fd8\u6709 # \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.none": "\u6ca1\u6709\u627e\u5230\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.one": "\u627e\u5230 1 \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.other": "# \u4e2a\u7b26\u5408\u6761\u4ef6\u7684\u7ed3\u679c", "search.result.placeholder": "\u952e\u5165\u4ee5\u5f00\u59cb\u641c\u7d22", "search.result.term.missing": "\u7f3a\u5c11", "select.version": "\u9009\u62e9\u5f53\u524d\u7248\u672c"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="../javascripts/extra.js"></script>
+      
+    
+  </body>
+</html>
